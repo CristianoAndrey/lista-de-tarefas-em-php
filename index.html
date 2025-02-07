@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Afazeres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="quadro">
+        <div id="listas-container">
+            <!-- Lista de exemplo -->
+            <div class="lista">
+                <div class="lista-header">
+                    <h2 class="lista-titulo">Tarefas</h2>
+                    <button class="apagar-lista" onclick="apagarLista(this)">✕</button>
+                </div>
+                <div class="lista-tarefas">
+                    <div class="input-grupo">
+                        <input type="text" class="nova-tarefa" placeholder="Adicionar um cartão" onkeypress="enviarComEnter(event, this)">
+                        <button onclick="adicionarTarefa(this)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- Botão ou div que chama a função para criar a nova lista -->
+<div class="adicionar-lista" onclick="adicionarNovaLista()">Adicionar nova lista</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
